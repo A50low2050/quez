@@ -26,6 +26,7 @@
 
 <script setup>
 const model = defineModel()
+console.log(model)
 
 defineProps({
   field: { type: Object, required: true },
