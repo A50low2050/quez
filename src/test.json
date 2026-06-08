@@ -1,0 +1,719 @@
+{
+  "data": {
+    "step_1": {
+      "id": 1,
+      "title": "Личная информация",
+      "description": "Пожалуйста, предоставьте ваши контактные данные.",
+      "questions": [
+        {
+          "id": 10,
+          "title": "Контактная информация",
+          "fields": [
+            {
+              "id": "name_input",
+              "name": "userName",
+              "label": "Имя",
+              "type": "text",
+              "placeholder": "Например: Иван"
+            },
+            {
+              "id": "email_input",
+              "name": "userEmail",
+              "label": "Email адрес",
+              "type": "email",
+              "placeholder": "Например: email@example.com"
+            },
+            {
+              "id": "phone_input",
+              "name": "userPhone",
+              "label": "Номер телефона",
+              "type": "tel",
+              "placeholder": "+7 999 000 00 00"
+            }
+          ]
+        }
+      ]
+    },
+    "step_2": {
+      "id": 2,
+      "title": "Ваша семья, привычки и ритм жизни",
+      "description": "Сад — это продолжение вашего дома, место для перезагрузки и отдыха от городской суеты. Давайте поймем, какой сценарий вашей загородной жизни, чтобы создать комфортный и красивый сад.",
+      "questions": [
+        {
+          "id": 21,
+          "title": "Как именно вы планируете использовать дом и участок?",
+          "fields": [
+            {
+              "id": "usage_permanent",
+              "name": "usage_permanent",
+              "value": "planing_house",
+              "label": "Дом для постоянного круглогодичного проживания",
+              "type": "radio"
+            },
+            {
+              "id": "usage_weekend",
+              "name": "usage_permanent",
+              "value": "planing_house_weekend",
+              "label": "Дом выходного дня (выходные и праздники круглый год)",
+              "type": "radio"
+            },
+            {
+              "id": "usage_summer",
+              "name": "usage_permanent",
+              "value": "classic_house",
+              "label": "Классическая дача (приезжаем в основном в теплое время года)",
+              "type": "radio"
+            }
+          ]
+        },
+        {
+          "id": 22,
+          "title": "Кто будет часто находиться в вашем саду?",
+          "fields": [
+            {
+              "id": "people_adults",
+              "name": "people_adults",
+              "label": "Взрослые (укажите возраст и как они любят отдыхать)",
+              "type": "textarea",
+              "placeholder": "Опишите здесь..."
+            },
+            {
+              "id": "people_kids",
+              "name": "people_kids",
+              "label": "Дети (пол, возраст, количество и хобби)",
+              "type": "textarea",
+              "placeholder": "Опишите здесь..."
+            },
+            {
+              "id": "people_elders",
+              "name": "people_elders",
+              "label": "Старшее поколение (нужна ли безбарьерная среда?)",
+              "type": "textarea",
+              "placeholder": "Опишите здесь..."
+            },
+            {
+              "id": "people_pets",
+              "name": "people_pets",
+              "label": "Домашние питомцы (собака, кошка, птицы)",
+              "type": "textarea",
+              "placeholder": "Опишите здесь..."
+            }
+          ]
+        },
+        {
+          "id": 23,
+          "title": "Социальная жизнь в саду",
+          "fields": [
+            {
+              "id": "social_weekends",
+              "name": "social_life",
+              "value": "social_weekends",
+              "label": "Почти каждые выходные приезжают гости",
+              "type": "radio"
+            },
+            {
+              "id": "social_rare",
+              "name": "social_life",
+              "value": "social_rare",
+              "label": "Изредка, по праздникам или особым поводам",
+              "type": "radio"
+            },
+            {
+              "id": "social_close",
+              "name": "social_life",
+              "value": "social_close",
+              "label": "Близкий круг (4–6 человек)",
+              "type": "radio"
+            },
+            {
+              "id": "social_parties",
+              "name": "social_life",
+              "value": "social_parties",
+              "label": "Шумные компании, вечеринки, детские дни рождения (10–15+ человек)",
+              "type": "radio"
+            }
+          ]
+        }
+      ]
+    },
+    "step_3": {
+      "id": 3,
+      "title": "Функциональные зоны участка",
+      "description": "Продуманное зонирование обеспечивает приватность, безопасность и скрывает бытовые зоны от глаз, делая отдых комфортным.",
+      "questions": [
+        {
+          "id": 31,
+          "title": "Какие зоны необходимы и приоритетны для вас?",
+          "fields": [
+            {
+              "id": "zone_terrace",
+              "name": "priority_zones",
+              "value": "terrace",
+              "label": "Открытая/Закрытая терраса",
+              "type": "radio"
+            },
+            {
+              "id": "zone_bbq",
+              "name": "priority_zones",
+              "value": "bbq",
+              "label": "Зона барбекю и летняя кухня",
+              "type": "radio"
+            },
+            {
+              "id": "zone_firepit",
+              "name": "priority_zones",
+              "value": "firepit",
+              "label": "Зона очага с уличной мебелью",
+              "type": "radio"
+            },
+            {
+              "id": "zone_kids",
+              "name": "priority_zones",
+              "value": "kids",
+              "label": "Детская площадка",
+              "type": "radio"
+            },
+            {
+              "id": "zone_sport",
+              "name": "priority_zones",
+              "value": "sport",
+              "label": "Спортплощадка",
+              "type": "radio"
+            },
+            {
+              "id": "zone_bath_pool",
+              "name": "priority_zones",
+              "value": "bath_pool",
+              "label": "Баня, купель или бассейн",
+              "type": "radio"
+            },
+            {
+              "id": "zone_parking",
+              "name": "priority_zones",
+              "value": "parking",
+              "label": "Парковка (гараж, навес, гостевая)",
+              "type": "radio"
+            }
+          ]
+        },
+        {
+          "id": 32,
+          "title": "Садоводство и урожай",
+          "fields": [
+            {
+              "id": "garden_decorative",
+              "name": "garden_type",
+              "value": "decorative",
+              "label": "Декоративный огород-конструктор (2-4 грядки)",
+              "type": "radio"
+            },
+            {
+              "id": "garden_full",
+              "name": "garden_type",
+              "value": "full",
+              "label": "Полноценная зона на 6+ грядок",
+              "type": "radio"
+            },
+            {
+              "id": "garden_mobile",
+              "name": "garden_type",
+              "value": "mobile",
+              "label": "Компактные мобильные парники",
+              "type": "radio"
+            },
+            {
+              "id": "garden_greenhouse",
+              "name": "garden_type",
+              "value": "greenhouse",
+              "label": "Стационарная теплица",
+              "type": "radio"
+            },
+            {
+              "id": "garden_trees",
+              "name": "garden_type",
+              "value": "trees",
+              "label": "Плодовый сад с деревьями и ягодными кустарниками",
+              "type": "radio"
+            }
+          ]
+        },
+        {
+          "id": 33,
+          "title": "Техническая зона сада",
+          "fields": [
+            {
+              "id": "tech_trash",
+              "name": "tech_zones",
+              "value": "trash",
+              "label": "Место под мусорные баки (скрытое от глаз)",
+              "type": "radio"
+            },
+            {
+              "id": "tech_storage",
+              "name": "tech_zones",
+              "value": "storage",
+              "label": "Хозблок для хранения садового инвентаря",
+              "type": "radio"
+            },
+            {
+              "id": "tech_chest",
+              "name": "tech_zones",
+              "value": "chest",
+              "label": "Сундук для хранения уличных подушек и текстиля",
+              "type": "radio"
+            },
+            {
+              "id": "tech_wood",
+              "name": "tech_zones",
+              "value": "wood",
+              "label": "Дровник (для камина, бани или зоны очага)",
+              "type": "radio"
+            },
+            {
+              "id": "tech_compost",
+              "name": "tech_zones",
+              "value": "compost",
+              "label": "Садовый компостер",
+              "type": "radio"
+            }
+          ]
+        }
+      ]
+    },
+    "step_4": {
+      "id": 4,
+      "title": "Технический паспорт участка",
+      "description": "География, рельеф и микроклимат определяют специфику реализации проекта.",
+      "questions": [
+        {
+          "id": 41,
+          "title": "Тип участка и микроклимат",
+          "fields": [
+            {
+              "id": "climate_field",
+              "name": "climate_field",
+              "value": "field",
+              "label": "Молодой поселок «в поле» (полностью открыт солнцу, сильные ветра)",
+              "type": "radio"
+            },
+            {
+              "id": "climate_forest",
+              "name": "climate_field",
+              "value": "forest",
+              "label": "Участок на границе с лесом или в лесу",
+              "type": "radio"
+            },
+            {
+              "id": "climate_village",
+              "name": "climate_field",
+              "value": "village",
+              "label": "Участок в обжитом поселке со сложившимся ландшафтом",
+              "type": "radio"
+            }
+          ]
+        },
+        {
+          "id": 42,
+          "title": "Рельеф и особенности",
+          "fields": [
+            {
+              "id": "relief_flat",
+              "name": "relief_features",
+              "value": "flat",
+              "label": "Участок ровный",
+              "type": "radio"
+            },
+            {
+              "id": "relief_slope",
+              "name": "relief_features",
+              "value": "slope",
+              "label": "Участок на рельефе с уклоном (пологий или крутой)",
+              "type": "radio"
+            },
+            {
+              "id": "relief_hill",
+              "name": "relief_features",
+              "value": "hill",
+              "label": "На участке есть овраг или холм",
+              "type": "radio"
+            },
+            {
+              "id": "relief_neighbors",
+              "name": "relief_features",
+              "value": "neighbors",
+              "label": "Окна соседей, высокие заборы, некрасивые виды",
+              "type": "radio"
+            }
+          ]
+        },
+        {
+          "id": 43,
+          "title": "Вода и экология",
+          "fields": [
+            {
+              "id": "water_ecology_select",
+              "name": "water_ecology_status",
+              "label": "Какая ситуация с водой и экологией на вашем участке?",
+              "type": "select",
+              "options": [
+                {
+                  "value": "dry",
+                  "label": "Участок сухой, вода уходит моментально"
+                },
+                {
+                  "value": "flow",
+                  "label": "После ливней вода затекает со стороны дорог или соседей"
+                },
+                {
+                  "value": "puddles",
+                  "label": "Вода застаивается, лужи стоят сутками"
+                },
+                {
+                  "value": "groundwater",
+                  "label": "Высокий уровень грунтовых вод"
+                },
+                {
+                  "value": "lake",
+                  "label": "Участок граничит с водоемом или болотом"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "step_5": {
+      "id": 5,
+      "title": "Инженерная инфраструктура",
+      "description": "Современный сад — это сначала инженерные коммуникации, потом красота и озеленение.",
+      "questions": [
+        {
+          "id": 51,
+          "title": "Автоматизация полива",
+          "fields": [
+            {
+              "id": "irrigation_drip",
+              "name": "irrigation_type",
+              "value": "drip",
+              "label": "Капельный полив (вода к корням, экономия ресурса)",
+              "type": "radio"
+            },
+            {
+              "id": "irrigation_sprinkler",
+              "name": "irrigation_type",
+              "value": "sprinkler",
+              "label": "Спринклерный полив (идеальное покрытие газона)",
+              "type": "radio"
+            },
+            {
+              "id": "irrigation_greenhouse",
+              "name": "irrigation_type",
+              "value": "greenhouse",
+              "label": "Полив внутри теплиц и парников",
+              "type": "radio"
+            }
+          ]
+        },
+        {
+          "id": 52,
+          "title": "Ливневая и дренажная система",
+          "fields": [
+            {
+              "id": "drainage_closed",
+              "name": "drainage_type",
+              "value": "closed",
+              "label": "Закрытая система труб с накопительным колодцем",
+              "type": "radio"
+            },
+            {
+              "id": "drainage_relief",
+              "name": "drainage_type",
+              "value": "relief",
+              "label": "Отвод на рельеф",
+              "type": "radio"
+            },
+            {
+              "id": "drainage_interception",
+              "name": "drainage_type",
+              "value": "interception",
+              "label": "Перехват внешних вод со стороны дорог",
+              "type": "radio"
+            }
+          ]
+        },
+        {
+          "id": 53,
+          "title": "Ландшафтное освещение",
+          "fields": [
+            {
+              "id": "lighting_duty",
+              "name": "lighting_type",
+              "value": "duty",
+              "label": "Дежурный свет: въезд, парковка, дорожка к дому",
+              "type": "radio"
+            },
+            {
+              "id": "lighting_private",
+              "name": "lighting_type",
+              "value": "private",
+              "label": "Приватный свет: мягкая подсветка двора и террас",
+              "type": "radio"
+            },
+            {
+              "id": "lighting_nav",
+              "name": "lighting_type",
+              "value": "nav",
+              "label": "Навигационный свет: неяркая подсветка дорожек",
+              "type": "radio"
+            },
+            {
+              "id": "lighting_accent",
+              "name": "lighting_type",
+              "value": "accent",
+              "label": "Акцентный свет: направленный свет на деревья и малые формы",
+              "type": "radio"
+            },
+            {
+              "id": "lighting_sensors",
+              "name": "lighting_type",
+              "value": "sensors",
+              "label": "Датчики движения и фотореле для автоматизации",
+              "type": "radio"
+            }
+          ]
+        }
+      ]
+    },
+    "step_6": {
+      "id": 6,
+      "title": "Визуальный стиль и материалы",
+      "description": "Эстетика — это не просто красивая картинка. Это эмоции и гармония с архитектурой дома.",
+      "questions": [
+        {
+          "id": 61,
+          "title": "Стилистический вектор",
+          "fields": [
+            {
+              "id": "style_minimalism",
+              "name": "style_vector",
+              "value": "minimalism",
+              "label": "Современный минимализм: строгая геометрия, четкие линии, идеальный порядок",
+              "type": "radio"
+            },
+            {
+              "id": "style_classic",
+              "name": "style_vector",
+              "value": "classic",
+              "label": "Новая классика: уют, мягкость, романтика загородной усадьбы",
+              "type": "radio"
+            },
+            {
+              "id": "style_eco",
+              "name": "style_vector",
+              "value": "eco",
+              "label": "Эко-стиль: максимальное слияние с природой, скандинавское или японское направление",
+              "type": "radio"
+            }
+          ]
+        },
+        {
+          "id": 62,
+          "title": "Покрытия для дорожек и площадок",
+          "fields": [
+            {
+              "id": "paving_concrete",
+              "name": "paving_materials",
+              "value": "concrete",
+              "label": "Крупноформатные плиты и архитектурный бетон",
+              "type": "radio"
+            },
+            {
+              "id": "paving_stone",
+              "name": "paving_materials",
+              "value": "stone",
+              "label": "Натуральный камень: плитняк, пиленый гранит, брусчатка",
+              "type": "radio"
+            },
+            {
+              "id": "paving_brick",
+              "name": "paving_materials",
+              "value": "brick",
+              "label": "Клинкерный кирпич терракотовых и темных оттенков",
+              "type": "radio"
+            },
+            {
+              "id": "paving_gravel",
+              "name": "paving_materials",
+              "value": "gravel",
+              "label": "Мягкие покрытия: гравийные отсыпки для лесных тропинок",
+              "type": "radio"
+            }
+          ]
+        },
+        {
+          "id": 63,
+          "title": "Материалы в деталях и отделке",
+          "fields": [
+            {
+              "id": "detail_wood",
+              "name": "detail_materials",
+              "value": "wood",
+              "label": "Натуральное дерево: террасная доска, лиственница, термодерево",
+              "type": "radio"
+            },
+            {
+              "id": "detail_corten",
+              "name": "detail_materials",
+              "value": "corten",
+              "label": "Фактурный металл с характером (Кортен, сталь с благородной ржавчиной)",
+              "type": "radio"
+            },
+            {
+              "id": "detail_black_steel",
+              "name": "detail_materials",
+              "value": "black_steel",
+              "label": "Минималистичная черная или графитовая сталь",
+              "type": "radio"
+            },
+            {
+              "id": "detail_stone",
+              "name": "detail_materials",
+              "value": "stone",
+              "label": "Натуральный сколотый камень и бетон",
+              "type": "radio"
+            }
+          ]
+        },
+        {
+          "id": 64,
+          "title": "Смысловые акценты",
+          "fields": [
+            {
+              "id": "accent_water",
+              "name": "accents",
+              "value": "water_bowl",
+              "label": "Миниатюрная водяная чаша — отражение неба и деревьев",
+              "type": "radio"
+            },
+            {
+              "id": "accent_tree",
+              "name": "accents",
+              "value": "tree",
+              "label": "Взрослое дерево необычной формы с подсветкой",
+              "type": "radio"
+            },
+            {
+              "id": "accent_wood_shed",
+              "name": "accents",
+              "value": "wood_shed",
+              "label": "Стильный дровник как произведение инженерного искусства",
+              "type": "radio"
+            },
+            {
+              "id": "accent_sculpture",
+              "name": "accents",
+              "value": "sculpture",
+              "label": "Скульптура, отражающая ваш характер и подход к жизни",
+              "type": "radio"
+            }
+          ]
+        }
+      ]
+    },
+    "step_7": {
+      "id": 7,
+      "title": "Бюджет и реализация",
+      "description": "Финансовый план позволяет реализовать сад поэтапно и без потери качества.",
+      "questions": [
+        {
+          "id": 71,
+          "title": "Форма реализации проекта",
+          "fields": [
+            {
+              "id": "impl_gried",
+              "name": "implementation_form",
+              "value": "gried",
+              "label": "Надзор + комплектация силами GRIED",
+              "type": "radio"
+            },
+            {
+              "id": "impl_author",
+              "name": "implementation_form",
+              "value": "author",
+              "label": "Авторский надзор (архитектор контролирует проект)",
+              "type": "radio"
+            },
+            {
+              "id": "impl_self",
+              "name": "implementation_form",
+              "value": "self",
+              "label": "Самостоятельное управление проектом",
+              "type": "radio"
+            }
+          ]
+        },
+        {
+          "id": 72,
+          "title": "Диапазон бюджета",
+          "fields": [
+            {
+              "id": "budget_up_to_5",
+              "name": "budget_range",
+              "value": "up_to_5",
+              "label": "До 5 млн ₽ — оптимизация и доработка",
+              "type": "radio"
+            },
+            {
+              "id": "budget_5_10",
+              "name": "budget_range",
+              "value": "5_10",
+              "label": "5–10 млн ₽ — комплексный ландшафт «под ключ»",
+              "type": "radio"
+            },
+            {
+              "id": "budget_over_10",
+              "name": "budget_range",
+              "value": "over_10",
+              "label": "Свыше 10 млн ₽ — сложные инженерные решения и премиум-материалы",
+              "type": "radio"
+            }
+          ]
+        },
+        {
+          "id": 73,
+          "title": "Темп реализации",
+          "fields": [
+            {
+              "id": "pace_1_season",
+              "name": "implementation_pace",
+              "value": "1_season",
+              "label": "Всё за 1 интенсивный сезон",
+              "type": "radio"
+            },
+            {
+              "id": "pace_2_seasons",
+              "name": "implementation_pace",
+              "value": "2_seasons",
+              "label": "Поэтапно за 2 сезона",
+              "type": "radio"
+            },
+            {
+              "id": "pace_3_4_seasons",
+              "name": "implementation_pace",
+              "value": "3_4_seasons",
+              "label": "Плавная реализация за 3–4 сезона (равномерное распределение нагрузки)",
+              "type": "radio"
+            }
+          ]
+        }
+      ]
+    },
+    "step_8": {
+      "id": 8,
+      "title": "Итог",
+      "description": "Вы проделали огромную работу. Сохраните этот файл и отправьте его на info@gried.ru или позвоните +7 (963) 661-14-82",
+      "highlight_text": "Через 5 дней мы подготовим предварительную концепцию планировки вашего участка. Давайте создадим сад вашей мечты!",
+      "questions": []
+    }
+  }
+}
