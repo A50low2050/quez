@@ -8,13 +8,13 @@
         {{ errorMessage }}
       </label>
     </div>
-    
-    <input 
-      :type="field.type" 
+
+    <input
+      :type="field.type"
       :id="field.id"
       :name="field.name"
       :placeholder="field.placeholder"
-      v-model="model" 
+      v-model="model"
       class="form-control fw-bold text-primary p-3"
       :class="{ 'border-danger': errorMessage }"
     />

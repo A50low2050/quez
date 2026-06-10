@@ -9,15 +9,15 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [vue(), pluginPurgeCss()],
-  css: {
-    postcss: {
-      plugins: [
-        prefixwrap('.my-landing-wrapper', {
-          excludedSelectors: ['html', 'body', ':root'],
-        }),
-      ],
-    },
-  },
+  // css: {
+  //   postcss: {
+  //     plugins: [
+  //       prefixwrap('.my-landing-wrapper', {
+  //         excludedSelectors: ['html', 'body', ':root'],
+  //       }),
+  //     ],
+  //   },
+  // },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),

@@ -16,7 +16,7 @@
           </div>
           <div class="step-info d-none d-lg-block">
             <h6 class="text-uppercase fw-normal mb-1 step-number text-white opacity-50">
-              step {{ step.id }}
+              Шаг {{ step.id }}
             </h6>
             <h6 class="step-count-title text-uppercase text-white mb-0">
               {{ step.title }}
@@ -42,15 +42,3 @@ defineProps({
 
 defineEmits(['changeStep'])
 </script>
-
-<!-- <style scoped>
-/* Отменяем подсветку фокуса, ЕСЛИ у кнопки НЕТ класса active */
-.nav-link:focus:not(.active) {
-  color: rgba(255, 255, 255, 0.5) !important; /* Здесь укажите цвет вашего обычного, неактивного текста */
-}
-
-/* На всякий случай убираем и серый фон при клике, если он появляется */
-.nav-link:focus:not(.active) {
-  background-color: transparent !important;
-}
-</style> -->

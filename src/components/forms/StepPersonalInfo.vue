@@ -1,14 +1,14 @@
 <template>
   <div class="step-content">
-    <h2 class="text-primary fw-semibold pt-3 mb-2">{{ data.title }}</h2>
-    <p class="text-light mb-4">{{ data.description }}</p>
+    <h2 class="text-primary fw-semibold mb-3">{{ data.title }}</h2>
+    <p class="text-light mb-3">{{ data.description }}</p>
 
-    <p v-if="data.highlight_text" class="fw-bold mb-4">{{ data.highlight_text }}</p>
+    <p v-if="data.highlight_text" class="fw-bold mb-3">{{ data.highlight_text }}</p>
 
-    <div v-for="(question, qIndex) in data.questions" :key="qIndex" class="mb-5">
-      <h4 class="mb-4">{{ question.title }}</h4>
+    <div v-for="(question, qIndex) in data.questions" :key="qIndex" class="mb-3">
+      <h4 class="mb-3">{{ question.title }}</h4>
 
-      <div v-for="field in question.fields" :key="field.id" class="mb-4 pt-2">
+      <div v-for="field in question.fields" :key="field.id" class="mb-3">
         <component
           :is="componentMap[field.type]"
           :field="field"

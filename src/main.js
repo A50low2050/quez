@@ -1,20 +1,28 @@
 import './assets/css/style.css'
-import './assets/js/index.js'
+import './assets/js/index'
 
 import { createApp } from 'vue'
 import App from './App.vue'
+import Datajson from './test.json'
+import ButtonsJson from './buttons.json'
 
-const appElement = document.getElementById('app')
-const configData = JSON.parse(appElement?.dataset.config || '{}')
-const btnData = JSON.parse(appElement?.dataset.btn || '{}')
+export { App }
 
-const initialData = {
-  config: configData,
-  buttons: btnData,
+export function initVueApp(containerId, config, buttons) {
+  const container = document.getElementById(containerId)
+  if (!container) return null
+  const app = createApp(App, { initialData: { config, buttons } })
+  app.mount(container)
+  return app
 }
 
-const app = createApp(App, {
-  initialData: initialData,
-})
+if (typeof window !== 'undefined') {
+  window.initVueApp = initVueApp
+}
 
-app.mount('#app')
+if (document.getElementById('app')) {
+  const config = Datajson || {}
+  const buttons = ButtonsJson || {}
+  initVueApp('app', config, buttons)
+  // initVueApp('app', config, buttons)
+}
